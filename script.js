@@ -14,7 +14,7 @@ h1_containers.forEach(function(elem){
     let index = 0
 
     //code for mouse click event
-    document.querySelector('#main').addEventListener('onclick',function(){
+    document.querySelector('#main').addEventListener('click',function(){
         if(!animating){
             animating = true
             gsap.to(h1s[index],{
