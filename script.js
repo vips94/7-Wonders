@@ -36,30 +36,6 @@ h1_containers.forEach(function(elem){
             })
         }
     })
-
-    //same code for mobile touch event
-    document.querySelector('#main').addEventListener('touchstart',function(){
-        if(!animating){
-            animating = true
-            gsap.to(h1s[index],{
-                top: '-=100%',
-                duration: 1,
-                ease: 'power1.out',
-                onComplete:function(){
-                    animating = false
-                    gsap.set(this._targets[0],{
-                        top:"100%"
-                    })
-                }
-            });
-            index === h1s.length-1 ? (index=0) : index++
-            gsap.to(h1s[index],{
-                top: '-=100%',
-                duration: 1,
-                ease: 'power1.out'
-            })
-        }
-    })
 })
 
 const description_containers = document.querySelectorAll('.column');
@@ -92,29 +68,6 @@ description_containers.forEach(function(elem){
         }
     })
 
-    //same code for mobile touch event
-    document.querySelector('#main').addEventListener('touchstart',function(){
-        if(!animating){
-            animating = true
-            gsap.to(ptags[index],{
-                opacity: 0,
-                duration: 1,
-                ease: 'power1.out',
-                onComplete:function(){
-                    animating = false
-                }
-            });
-            index === ptags.length-1 ? (index=0) : index++
-
-            currentWonder = ptags[index].id;
-
-            gsap.to(ptags[index],{
-                opacity: 1,
-                duration: 1,
-                ease: 'power1.out'
-            })
-        }
-    })
 })
 
 
