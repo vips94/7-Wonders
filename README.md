@@ -1,5 +1,5 @@
 # 7-Wonders
-7-Wonders of the world with modern UI here is the link
+7-Wonders of the world with modern UI here is the link https://vips94.github.io/7-Wonders/
 
 
 
