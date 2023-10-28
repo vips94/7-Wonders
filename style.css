@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-section{
+    position: fixed;
+    top: 2.5rem;
+    left: 2.5rem;
+    right: 2.5rem;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+#logo{
+    font-size: 2vmax;
+    color: white;
+    font-family:'Jokerman';
+}
+
+.left-menu{
+    display: inherit;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3vw;
+}
+
+.left-menu img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.left-menu a{
+    pointer-events: all;
+    color: white;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.right-menu{
+    position: relative;
+    display: inherit;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5rem;
+}
+
+.right-menu a{
+    color: white;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -.03em;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+.page-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    position: relative;
+    overflow:hidden;
+}
+
+.bg-sec{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-sec img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.body-sec{
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-body{
+    text-align: left;
+    font-family: fantasy;
+    width: 50%;
+}
+
+.left-body button{
+    pointer-events: all;
+    margin-top: 1rem;
+    border: 0;
+    white-space: nowrap;
+    color: black;
+    font-size: 24px;
+    line-height: 1;
+    font-family: fantasy;
+    height: 48px;
+    padding: 0 2rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.text{
+    text-transform: uppercase;
+    overflow: hidden;
+    height: 74px;
+    width: auto;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.text h1:nth-child(1){
+    top: 0;
+}
+
+.text h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: white;
+    white-space: nowrap;
+    font-size: 5rem;
+    text-align: left;
+    margin: 0 ;
+}
+
+
+.right-body{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.column{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.column p:nth-child(1){
+    opacity: 1;
+}
+
+.column p{
+    color:white;
+    font-size: 2rem;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+}
+
+.img{
+    width: 170px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    right: 0;
+    margin: 0;
+}
