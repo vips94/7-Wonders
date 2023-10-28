@@ -103,7 +103,7 @@
 .left-body{
     text-align: left;
     font-family: fantasy;
-    width: 50%;
+    width: 65%;
 }
 
 .left-body button{
@@ -148,6 +148,7 @@
 
 .right-body{
     width: 30%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,7 +163,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    height: 300px;
+    height: 100%;
 }
 
 .column p:nth-child(1){
@@ -189,4 +190,61 @@
     position: relative;
     right: 0;
     margin: 0;
+}
+
+@media screen and (max-width:1280px) {
+    .body-sec{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left-body{
+        width: 100%;
+    }
+
+    .right-body{
+        width: 100%;
+        height: 30%;
+    }
+
+    .column p{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav-section{
+        max-width: 90%;
+    }
+    .body-sec{
+        max-width: 90%;
+    }
+
+    .column p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .text{
+        height: 60px;
+    }
+
+    .column p{
+        font-size: 1rem;
+    }
+
+    .text h1{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:471px) {
+    .text{
+        height: 48px;
+        margin-bottom: 1.5rem;
+    }
+    .text h1{
+        font-size: 3rem;
+    }
 }
